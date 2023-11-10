@@ -1,6 +1,6 @@
 name: Build SMPlayer with Qt 5
 
-on: [pull_request, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   build:
