@@ -399,6 +399,15 @@ void Playlist::updateWindowTitle() {
 	if (title.isEmpty()) title = tr("Untitled playlist");
 	if (modified) title += " (*)";
 
+	if (automatically_get_info) {
+		int total_duration = 0;
+		for (int n = 0; n < count(); n++) {
+			PLItem * i = itemData(n);
+			total_duration += i->duration();
+		}
+		title += " [" + Helper::formatTime(total_duration) + "]";
+	}
+
 	qDebug() << "Playlist::updateWindowTitle:" << title;
 
 	setWindowTitle(title);
@@ -485,6 +494,9 @@ void Playlist::createTable() {
 
 	connect(listView, SIGNAL(activated(const QModelIndex &)),
             this, SLOT(itemActivated(const QModelIndex &)) );
+
+	connect(listView->horizontalHeader(), SIGNAL(sectionClicked(int)),
+            this, SLOT(headerClicked(int)));
 
 	setFilenameColumnVisible(false);
 	setShuffleColumnVisible(false);
@@ -2586,6 +2598,11 @@ int Playlist::maxItemsUrlHistory() {
 	return history_urls->maxItems();
 }
 #endif
+
+void Playlist::headerClicked(int index) {
+	qDebug() << "Playlist::headerClicked:" << index;
+	shuffleAct->setChecked(false);
+}
 
 // Language change stuff
 void Playlist::changeEvent(QEvent *e) {
