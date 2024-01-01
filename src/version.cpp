@@ -22,12 +22,12 @@
 #define USE_SVN_VERSIONS 1
 #define DEVELOPMENT_VERSION 1
 
-#define VERSION "23.6.0"
+#define VERSION "23.12.0"
 
 #if USE_SVN_VERSIONS && DEVELOPMENT_VERSION
 #include "svn_revision.h"
 #else
-#define SVN_REVISION "10157"
+#define SVN_REVISION "10207"
 #endif
 
 #ifdef Q_OS_WIN

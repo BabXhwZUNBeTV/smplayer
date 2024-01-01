@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>About</name>
     <message>
@@ -803,6 +801,11 @@ Haluatko ylikirjoittaa sen?</translation>
         <translation>Valitse tiedosto</translation>
     </message>
     <message>
+        <location filename="../basegui.cpp" line="1869"/>
+        <source>D&amp;ownload subtitles from %1...</source>
+        <translation>&amp;Lataa tekstitykset %1...</translation>
+    </message>
+    <message>
         <location filename="../basegui.cpp" line="1892"/>
         <source>&amp;YouTube%1 browser</source>
         <translation>&amp;YouTube%1 selain</translation>
@@ -1048,9 +1051,9 @@ Asetus-ikkuna näytetäään, jotta voit tehdä sen.</translation>
         <translation>Käytä &amp;mukautettua tyyliä</translation>
     </message>
     <message>
-        <location filename="../basegui.cpp" line="1869"/>
-        <source>Find subtitles at &amp;OpenSubtitles.org...</source>
-        <translation>Hae tekstityksiä &amp;OpenSubtitles.org...</translation>
+        <location filename="../basegui.cpp" line="1870"/>
+        <source>Upload su&amp;btitles to %1...</source>
+        <translation>Lähetä te&amp;kstitykset %1...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="1879"/>
@@ -1690,11 +1693,6 @@ Asetus-ikkuna näytetäään, jotta voit tehdä sen.</translation>
         <location filename="../basegui.cpp" line="1980"/>
         <source>Reset audio equalizer</source>
         <translation>Nollaa äänitaajuuskorjain</translation>
-    </message>
-    <message>
-        <location filename="../basegui.cpp" line="1870"/>
-        <source>Upload su&amp;btitles to OpenSubtitles.org...</source>
-        <translation>Lähetä &amp;tekstityksiä osoitteeseen opensubtitles.org...</translation>
     </message>
     <message>
         <location filename="../basegui.cpp" line="2089"/>
@@ -2728,7 +2726,7 @@ Asetus-ikkuna näytetäään, jotta voit tehdä sen.</translation>
         <location filename="../favorites.cpp" line="375"/>
         <location filename="../favorites.cpp" line="379"/>
         <source>Enter the number of the item in the list to jump:</source>
-        <translation>Syötä kohtien lukumäärä listaan siirtyäksesi:</translation>
+        <translation>Anna luettelon kohteen numero ja siirry siihen:</translation>
     </message>
     <message>
         <location filename="../favorites.cpp" line="89"/>
@@ -3046,14 +3044,6 @@ Esimerkki: extrastereo,karaoke</translation>
         <translation>Nimi</translation>
     </message>
     <message>
-        <source>Format</source>
-        <translation type="vanished">Muoto</translation>
-    </message>
-    <message>
-        <source>Files</source>
-        <translation type="vanished">Tiedostot</translation>
-    </message>
-    <message>
         <location filename="../findsubtitles/findsubtitleswindow.cpp" line="229"/>
         <source>Date</source>
         <translation>Päivämäärä</translation>
@@ -3062,16 +3052,6 @@ Esimerkki: extrastereo,karaoke</translation>
         <location filename="../findsubtitles/findsubtitleswindow.cpp" line="229"/>
         <source>Uploaded by</source>
         <translation>Lisännyt</translation>
-    </message>
-    <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="270"/>
-        <source>Portuguese - Brasil</source>
-        <translation>Brasilian portugali</translation>
-    </message>
-    <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="265"/>
-        <source>Spanish - Spain</source>
-        <translation>Espanja - Espanja</translation>
     </message>
     <message>
         <location filename="../findsubtitles/findsubtitleswindow.cpp" line="243"/>
@@ -3085,93 +3065,88 @@ Esimerkki: extrastereo,karaoke</translation>
     </message>
     <message>
         <location filename="../findsubtitles/findsubtitleswindow.cpp" line="266"/>
-        <source>Spanish - Latin America</source>
-        <translation>Espanja - Latinalainen Amerikka</translation>
-    </message>
-    <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="278"/>
         <source>All</source>
         <translation>Kaikki</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="287"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="275"/>
         <source>Close</source>
         <translation>Sulje</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="310"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="298"/>
         <source>Subtitles service powered by %1</source>
         <translation>Tekstityspalvelun tarjoaa %1</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="401"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="393"/>
         <source>Connecting...</source>
         <translation>Yhdistetään...</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="411"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="403"/>
         <source>Login to opensubtitles.org has failed</source>
         <translation>Kirjautuminen opensubtitles.org sivulle epäonnistui</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="415"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="407"/>
         <source>Search has failed</source>
         <translation>Haku epäonnistui</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="419"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="411"/>
         <source>File URL not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiedoston url-osoitetta ei löydy</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="601"/>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="603"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="593"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="595"/>
         <source>Save File</source>
         <translation>Tallenna tiedosto</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="688"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="680"/>
         <source>Error fixing the subtitle lines</source>
         <translation>Virhe tekstitysrivien kiinnityksessä</translation>
     </message>
     <message>
         <location filename="../findsubtitles/findsubtitleswindow.ui" line="136"/>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="291"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="279"/>
         <source>&amp;Download</source>
         <translation>&amp;Lataa</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="292"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="280"/>
         <source>&amp;Copy link to clipboard</source>
         <translation>&amp;Kopioi leikepöydälle</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="395"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="387"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="396"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="388"/>
         <source>Download failed: %1.</source>
         <translation>Lataus epäonnistui: %1.</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="429"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="421"/>
         <source>Downloading...</source>
         <translation>Ladataan...</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="437"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="429"/>
         <source>Done.</source>
         <translation>Valmis.</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="483"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="475"/>
         <source>%1 files available</source>
         <translation>%1 tiedostot saatavana</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="492"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="484"/>
         <source>Failed to parse the received data.</source>
         <translation>Vastaanotetun tiedon jäsennys epäonnistui.</translation>
     </message>
@@ -3211,18 +3186,18 @@ Esimerkki: extrastereo,karaoke</translation>
         <translation>&amp;Virkistä</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="624"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="616"/>
         <source>Subtitle saved as %1</source>
         <translation>Tekstitys tallennettu %1</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="619"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="611"/>
         <source>Error saving file</source>
         <translation>Virhe tallennettaessa tiedostoa</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="620"/>
-        <source>It wasn&apos;t possible to save the downloaded
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="612"/>
+        <source>It wasn't possible to save the downloaded
 file in folder %1
 Please check the permissions of that folder.</source>
         <translation>Ladattua tiedostoa ei voitu tallentaa
@@ -3230,8 +3205,8 @@ kansioon %1
 Tarkista kansion oikeudet.</translation>
     </message>
     <message>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="393"/>
-        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="570"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="385"/>
+        <location filename="../findsubtitles/findsubtitleswindow.cpp" line="562"/>
         <source>Download failed</source>
         <translation>Lataus epäonnistui</translation>
     </message>
@@ -3592,7 +3567,7 @@ Tarkista kansion oikeudet.</translation>
     <message>
         <location filename="../inputmplayerversion.ui" line="14"/>
         <source>SMPlayer - Enter the MPlayer version</source>
-        <translation>SMPlayer - Syötä MPlayerin versio</translation>
+        <translation>SMPlayer - Anna MPlayer versio</translation>
     </message>
     <message>
         <location filename="../inputmplayerversion.ui" line="35"/>
@@ -3630,7 +3605,7 @@ Tarkista kansion oikeudet.</translation>
     <message>
         <location filename="../inputurl.ui" line="13"/>
         <source>SMPlayer - Enter URL</source>
-        <translation>SMPlayer - Syötä URL</translation>
+        <translation>SMPlayer - Anna url-osoite</translation>
     </message>
     <message>
         <location filename="../inputurl.ui" line="64"/>
@@ -3643,643 +3618,708 @@ Tarkista kansion oikeudet.</translation>
     <message>
         <location filename="../languages.cpp" line="24"/>
         <source>Afar</source>
-        <translation>afarin kieli</translation>
+        <translation>Afar</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="25"/>
+        <location filename="../languages.cpp" line="358"/>
         <source>Abkhazian</source>
-        <translation>abhaasin kieli</translation>
+        <translation>Abkhazian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="27"/>
+        <location filename="../languages.cpp" line="355"/>
         <source>Afrikaans</source>
-        <translation>afrikaansin kieli</translation>
+        <translation>Afrikaans</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="29"/>
         <source>Amharic</source>
-        <translation>amharan kieli</translation>
+        <translation>Amharic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="31"/>
         <location filename="../languages.cpp" line="310"/>
+        <location filename="../languages.cpp" line="359"/>
         <source>Arabic</source>
-        <translation>arabian kieli</translation>
+        <translation>Arabic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="32"/>
+        <location filename="../languages.cpp" line="361"/>
         <source>Assamese</source>
-        <translation>assamin kieli</translation>
+        <translation>Assamese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="34"/>
         <source>Aymara</source>
-        <translation>aimaran kieli</translation>
+        <translation>Aymara</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="35"/>
+        <location filename="../languages.cpp" line="427"/>
         <source>Azerbaijani</source>
-        <translation>azerin kieli</translation>
+        <translation>Azerbaijani</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="36"/>
         <source>Bashkir</source>
-        <translation>baskiirin kieli</translation>
+        <translation>Bashkir</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="38"/>
         <location filename="../languages.cpp" line="336"/>
+        <location filename="../languages.cpp" line="366"/>
         <source>Bulgarian</source>
-        <translation>bulgarian kieli</translation>
+        <translation>Bulgarian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="39"/>
         <source>Bihari</source>
-        <translation>biharin kieli</translation>
+        <translation>Bihari</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="40"/>
         <source>Bislama</source>
-        <translation>bislaman kieli</translation>
+        <translation>Bislama</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="42"/>
+        <location filename="../languages.cpp" line="364"/>
         <source>Bengali</source>
-        <translation>bengalin kieli</translation>
+        <translation>Bengali</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="43"/>
         <source>Tibetan</source>
-        <translation>tiibetin kieli</translation>
+        <translation>Tibetan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="44"/>
+        <location filename="../languages.cpp" line="365"/>
         <source>Breton</source>
-        <translation>bretonin kieli</translation>
+        <translation>Breton</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="46"/>
+        <location filename="../languages.cpp" line="367"/>
         <source>Catalan</source>
-        <translation>katalaanin kieli</translation>
+        <translation>Catalan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="48"/>
         <source>Corsican</source>
-        <translation>korsikan kieli</translation>
+        <translation>Corsican</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="50"/>
         <location filename="../languages.cpp" line="337"/>
+        <location filename="../languages.cpp" line="429"/>
         <source>Czech</source>
-        <translation>tsekin kieli</translation>
+        <translation>Czech</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="53"/>
+        <location filename="../languages.cpp" line="421"/>
         <source>Welsh</source>
-        <translation>walesin kieli</translation>
+        <translation>Welsh</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="54"/>
+        <location filename="../languages.cpp" line="430"/>
         <source>Danish</source>
-        <translation>tanskan kieli</translation>
+        <translation>Danish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="55"/>
         <location filename="../languages.cpp" line="224"/>
+        <location filename="../languages.cpp" line="371"/>
         <source>German</source>
-        <translation>saksan kieli</translation>
+        <translation>German</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="59"/>
+        <location filename="../languages.cpp" line="375"/>
         <source>Greek</source>
-        <translation>kreikan kieli</translation>
+        <translation>Greek</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="60"/>
         <location filename="../languages.cpp" line="225"/>
+        <location filename="../languages.cpp" line="432"/>
         <source>English</source>
-        <translation>englannin kieli</translation>
+        <translation>English</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="61"/>
+        <location filename="../languages.cpp" line="433"/>
         <source>Esperanto</source>
-        <translation>esperanto</translation>
+        <translation>Esperanto</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="62"/>
         <location filename="../languages.cpp" line="226"/>
+        <location filename="../languages.cpp" line="410"/>
         <source>Spanish</source>
-        <translation>espanjan kieli</translation>
+        <translation>Spanish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="63"/>
         <location filename="../languages.cpp" line="338"/>
+        <location filename="../languages.cpp" line="434"/>
         <source>Estonian</source>
-        <translation>eestin kieli</translation>
+        <translation>Estonian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="64"/>
+        <location filename="../languages.cpp" line="363"/>
         <source>Basque</source>
-        <translation>baski</translation>
+        <translation>Basque</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="65"/>
+        <location filename="../languages.cpp" line="397"/>
         <source>Persian</source>
-        <translation>persian kieli</translation>
+        <translation>Persian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="67"/>
         <location filename="../languages.cpp" line="227"/>
+        <location filename="../languages.cpp" line="435"/>
         <source>Finnish</source>
-        <translation>suomen kieli</translation>
+        <translation>Finnish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="69"/>
         <source>Faroese</source>
-        <translation>fääri (Färsaarilla asuvien kieli)</translation>
+        <translation>Faroese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="70"/>
         <location filename="../languages.cpp" line="228"/>
+        <location filename="../languages.cpp" line="369"/>
         <source>French</source>
-        <translation>ranskan kieli</translation>
+        <translation>French</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="71"/>
         <source>Frisian</source>
-        <translation>friisin kieli</translation>
+        <translation>Frisian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="72"/>
+        <location filename="../languages.cpp" line="373"/>
         <source>Irish</source>
-        <translation>iirin kieli</translation>
+        <translation>Irish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="74"/>
+        <location filename="../languages.cpp" line="374"/>
         <source>Galician</source>
-        <translation>galician kieli</translation>
+        <translation>Galician</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="75"/>
         <source>Guarani</source>
-        <translation>guaranin kieli</translation>
+        <translation>Guarani</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="76"/>
         <source>Gujarati</source>
-        <translation>gudžaratin kieli</translation>
+        <translation>Gujarati</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="78"/>
         <source>Hausa</source>
-        <translation>hausan kieli</translation>
+        <translation>Hausa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="79"/>
+        <location filename="../languages.cpp" line="376"/>
         <source>Hebrew</source>
-        <translation>heprean kieli</translation>
+        <translation>Hebrew</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="80"/>
+        <location filename="../languages.cpp" line="377"/>
         <source>Hindi</source>
-        <translation>hindin kieli</translation>
+        <translation>Hindi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="82"/>
         <location filename="../languages.cpp" line="339"/>
+        <location filename="../languages.cpp" line="378"/>
         <source>Croatian</source>
-        <translation>kroaatti</translation>
+        <translation>Croatian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="84"/>
         <location filename="../languages.cpp" line="340"/>
+        <location filename="../languages.cpp" line="379"/>
         <source>Hungarian</source>
-        <translation>unkarin kieli</translation>
+        <translation>Hungarian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="85"/>
+        <location filename="../languages.cpp" line="360"/>
         <source>Armenian</source>
-        <translation>armenia</translation>
+        <translation>Armenian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="88"/>
+        <location filename="../languages.cpp" line="382"/>
         <source>Interlingua</source>
-        <translation>interlingua</translation>
+        <translation>Interlingua</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="89"/>
+        <location filename="../languages.cpp" line="436"/>
         <source>Indonesian</source>
-        <translation>indonesian kieli</translation>
+        <translation>Indonesian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="90"/>
         <source>Interlingue</source>
-        <translation>interlingue (keinotekoinen kieli)</translation>
+        <translation>Interlingue</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="95"/>
+        <location filename="../languages.cpp" line="381"/>
         <source>Icelandic</source>
-        <translation>islannin kieli</translation>
+        <translation>Icelandic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="96"/>
         <location filename="../languages.cpp" line="229"/>
+        <location filename="../languages.cpp" line="387"/>
         <source>Italian</source>
-        <translation>italian kieli</translation>
+        <translation>Italian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="97"/>
         <source>Inuktitut</source>
-        <translation>inuittikieli</translation>
+        <translation>Inuktitut</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="98"/>
         <location filename="../languages.cpp" line="230"/>
+        <location filename="../languages.cpp" line="388"/>
         <source>Japanese</source>
-        <translation>japanin kieli</translation>
+        <translation>Japanese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="99"/>
         <source>Javanese</source>
-        <translation>jaavan kieli</translation>
+        <translation>Javanese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="100"/>
+        <location filename="../languages.cpp" line="370"/>
         <source>Georgian</source>
-        <translation>georgian kieli</translation>
+        <translation>Georgian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="104"/>
+        <location filename="../languages.cpp" line="383"/>
         <source>Kazakh</source>
-        <translation>kazakhkin kieli</translation>
+        <translation>Kazakh</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="105"/>
         <source>Greenlandic</source>
-        <translation>grönlannin kieli</translation>
+        <translation>Greenlandic</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="107"/>
+        <location filename="../languages.cpp" line="437"/>
         <source>Kannada</source>
-        <translation>kannadan kieli</translation>
+        <translation>Kannada</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="108"/>
+        <location filename="../languages.cpp" line="390"/>
         <source>Korean</source>
-        <translation>korean kieli</translation>
+        <translation>Korean</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="110"/>
         <source>Kashmiri</source>
-        <translation>kashmirin kieli</translation>
+        <translation>Kashmiri</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="111"/>
+        <location filename="../languages.cpp" line="391"/>
         <source>Kurdish</source>
-        <translation>kurdin kieli</translation>
+        <translation>Kurdish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="114"/>
         <source>Kirghiz</source>
-        <translation>kirghizin kieli</translation>
+        <translation>Kirghiz</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="115"/>
         <source>Latin</source>
-        <translation>latinankielinen</translation>
+        <translation>Latin</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="119"/>
         <source>Lingala</source>
-        <translation>nigeriläis-kongolainen kieli</translation>
+        <translation>Lingala</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="121"/>
         <location filename="../languages.cpp" line="341"/>
+        <location filename="../languages.cpp" line="385"/>
         <source>Lithuanian</source>
-        <translation>liettuan kieli</translation>
+        <translation>Lithuanian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="123"/>
         <location filename="../languages.cpp" line="342"/>
+        <location filename="../languages.cpp" line="384"/>
         <source>Latvian</source>
-        <translation>latvian kieli</translation>
+        <translation>Latvian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="124"/>
         <source>Malagasy</source>
-        <translation>malagasin kieli</translation>
+        <translation>Malagasy</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="126"/>
         <source>Maori</source>
-        <translation>Maorien kieli</translation>
+        <translation>Maori</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="127"/>
+        <location filename="../languages.cpp" line="392"/>
         <source>Macedonian</source>
-        <translation>makedonian kieli</translation>
+        <translation>Macedonian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="128"/>
+        <location filename="../languages.cpp" line="386"/>
         <source>Malayalam</source>
-        <translation>malajalamin kieli</translation>
+        <translation>Malayalam</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="129"/>
+        <location filename="../languages.cpp" line="441"/>
         <source>Mongolian</source>
-        <translation>mongolian kieli</translation>
+        <translation>Mongolian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="130"/>
         <source>Moldavian</source>
-        <translation>moldavian kieli</translation>
+        <translation>Moldavian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="131"/>
+        <location filename="../languages.cpp" line="393"/>
         <source>Marathi</source>
-        <translation>marathin kieli</translation>
+        <translation>Marathi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="132"/>
+        <location filename="../languages.cpp" line="439"/>
         <source>Malay</source>
-        <translation>malesian kieli</translation>
+        <translation>Malay</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="133"/>
         <source>Maltese</source>
-        <translation>maltan kieli</translation>
+        <translation>Maltese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="134"/>
+        <location filename="../languages.cpp" line="357"/>
         <source>Burmese</source>
-        <translation>burman kieli</translation>
+        <translation>Burmese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="135"/>
         <source>Nauru</source>
-        <translation>naurun kieli</translation>
-    </message>
-    <message>
-        <source>BokmÃ¥l</source>
-        <translation type="vanished">Bokm</translation>
+        <translation>Nauru</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="142"/>
+        <location filename="../languages.cpp" line="442"/>
         <source>Nepali</source>
-        <translation>nepalin kieli</translation>
+        <translation>Nepali</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="144"/>
         <location filename="../languages.cpp" line="231"/>
+        <location filename="../languages.cpp" line="431"/>
         <source>Dutch</source>
-        <translation>hollannin kieli</translation>
+        <translation>Dutch</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="145"/>
         <source>Norwegian Nynorsk</source>
-        <translation>Norja Nynorsk</translation>
+        <translation>Norwegian Nynorsk</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="146"/>
         <location filename="../languages.cpp" line="232"/>
+        <location filename="../languages.cpp" line="395"/>
         <source>Norwegian</source>
-        <translation>norjan kieli</translation>
+        <translation>Norwegian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="150"/>
+        <location filename="../languages.cpp" line="396"/>
         <source>Occitan</source>
-        <translation>oksitaanin kieli</translation>
+        <translation>Occitan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="153"/>
         <source>Oriya</source>
-        <translation>oriyan kieli</translation>
+        <translation>Oriya</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="157"/>
         <location filename="../languages.cpp" line="343"/>
+        <location filename="../languages.cpp" line="398"/>
         <source>Polish</source>
-        <translation>puolan kieli</translation>
+        <translation>Polish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="159"/>
         <location filename="../languages.cpp" line="233"/>
+        <location filename="../languages.cpp" line="399"/>
         <source>Portuguese</source>
-        <translation>portugalin kieli</translation>
+        <translation>Portuguese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="160"/>
         <source>Quechua</source>
-        <translation>ketšuan kieli</translation>
+        <translation>Quechua</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="163"/>
+        <location filename="../languages.cpp" line="422"/>
         <source>Romanian</source>
-        <translation>romanian kieli</translation>
+        <translation>Romanian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="164"/>
         <location filename="../languages.cpp" line="234"/>
         <location filename="../languages.cpp" line="317"/>
         <location filename="../languages.cpp" line="344"/>
+        <location filename="../languages.cpp" line="401"/>
         <source>Russian</source>
-        <translation>venäjän kieli</translation>
+        <translation>Russian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="165"/>
         <source>Kinyarwanda</source>
-        <translation>bantukieli</translation>
+        <translation>Kinyarwanda</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="166"/>
         <source>Sanskrit</source>
-        <translation>Sanskritin kieli</translation>
+        <translation>Sanskrit</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="168"/>
+        <location filename="../languages.cpp" line="409"/>
         <source>Sindhi</source>
-        <translation>sindhin kieli</translation>
+        <translation>Sindhi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="172"/>
         <location filename="../languages.cpp" line="345"/>
+        <location filename="../languages.cpp" line="403"/>
         <source>Slovak</source>
-        <translation>slovakiankielinen</translation>
+        <translation>Slovak</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="174"/>
         <source>Samoan</source>
-        <translation>samoan kieli</translation>
+        <translation>Samoan</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="175"/>
         <source>Shona</source>
-        <translation>shonan kieli</translation>
+        <translation>Shona</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="176"/>
+        <location filename="../languages.cpp" line="446"/>
         <source>Somali</source>
-        <translation>somalian kieli</translation>
+        <translation>Somali</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="177"/>
+        <location filename="../languages.cpp" line="425"/>
         <source>Albanian</source>
-        <translation>albanian kieli</translation>
+        <translation>Albanian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="178"/>
+        <location filename="../languages.cpp" line="402"/>
         <source>Serbian</source>
-        <translation>serbian kieli</translation>
+        <translation>Serbian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="181"/>
         <source>Sundanese</source>
-        <translation>sundan kieli</translation>
+        <translation>Sundanese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="182"/>
         <location filename="../languages.cpp" line="235"/>
+        <location filename="../languages.cpp" line="412"/>
         <source>Swedish</source>
-        <translation>ruotsin kieli</translation>
+        <translation>Swedish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="183"/>
+        <location filename="../languages.cpp" line="411"/>
         <source>Swahili</source>
-        <translation>swahilin kieli</translation>
+        <translation>Swahili</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="184"/>
+        <location filename="../languages.cpp" line="406"/>
         <source>Tamil</source>
-        <translation>tamilin kieli</translation>
+        <translation>Tamil</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="185"/>
+        <location filename="../languages.cpp" line="414"/>
         <source>Telugu</source>
-        <translation>telugun kieli</translation>
+        <translation>Telugu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="186"/>
         <source>Tajik</source>
-        <translation>tadžikin  kieli</translation>
+        <translation>Tajik</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="187"/>
+        <location filename="../languages.cpp" line="415"/>
         <source>Thai</source>
-        <translation>thain kieli</translation>
+        <translation>Thai</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="188"/>
         <source>Tigrinya</source>
-        <translation>tigrinyanin kieli</translation>
+        <translation>Tigrinya</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="189"/>
+        <location filename="../languages.cpp" line="416"/>
         <source>Turkmen</source>
-        <translation>turkmenian kieli</translation>
+        <translation>Turkmen</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="190"/>
+        <location filename="../languages.cpp" line="447"/>
         <source>Tagalog</source>
-        <translation>tagalogin kieli</translation>
+        <translation>Tagalog</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="192"/>
         <source>Tonga</source>
-        <translation>tongan kieli</translation>
+        <translation>Tonga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="193"/>
         <location filename="../languages.cpp" line="312"/>
+        <location filename="../languages.cpp" line="417"/>
         <source>Turkish</source>
-        <translation>turkin kieli</translation>
+        <translation>Turkish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="194"/>
         <source>Tsonga</source>
-        <translation>tsongan kieli</translation>
+        <translation>Tsonga</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="195"/>
+        <location filename="../languages.cpp" line="413"/>
         <source>Tatar</source>
-        <translation>tataarin kieli</translation>
+        <translation>Tatar</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="196"/>
         <source>Twi</source>
-        <translation>twin kieli</translation>
+        <translation>Twi</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="198"/>
         <source>Uighur</source>
-        <translation>uighurin kieli</translation>
+        <translation>Uighur</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="199"/>
         <location filename="../languages.cpp" line="347"/>
+        <location filename="../languages.cpp" line="418"/>
         <source>Ukrainian</source>
-        <translation>ukrainan kieli</translation>
+        <translation>Ukrainian</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="200"/>
+        <location filename="../languages.cpp" line="448"/>
         <source>Urdu</source>
-        <translation>urdun kieli</translation>
+        <translation>Urdu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="201"/>
+        <location filename="../languages.cpp" line="419"/>
         <source>Uzbek</source>
-        <translation>uzbekin kieli</translation>
+        <translation>Uzbek</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="203"/>
+        <location filename="../languages.cpp" line="420"/>
         <source>Vietnamese</source>
-        <translation>vietnamin kieli</translation>
-    </message>
-    <message>
-        <source>VolapÃ¼k</source>
-        <translation type="vanished">Volap</translation>
+        <translation>Vietnamese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="210"/>
         <source>Wolof</source>
-        <translation>wolofin kieli</translation>
+        <translation>Wolof</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="211"/>
         <source>Xhosa</source>
-        <translation>xhosan kieli</translation>
+        <translation>Xhosa</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="212"/>
         <source>Yiddish</source>
-        <translation>jiddišin  kieli</translation>
+        <translation>Yiddish</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="213"/>
         <source>Yoruba</source>
-        <translation>joruban  kieli</translation>
+        <translation>Yoruba</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="214"/>
         <source>Zhuang</source>
-        <translation>zhuangin kieli</translation>
+        <translation>Zhuang</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="215"/>
         <location filename="../languages.cpp" line="236"/>
         <location filename="../languages.cpp" line="348"/>
         <source>Chinese</source>
-        <translation>kiinan kieli</translation>
+        <translation>Chinese</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="216"/>
         <source>Zulu</source>
-        <translation>zulun kieli</translation>
+        <translation>Zulu</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="245"/>
         <source>Arabic - Syria</source>
-        <translation>Arabia - Syyria</translation>
+        <translation>Arabic - Syria</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="302"/>
@@ -4392,6 +4432,101 @@ Tarkista kansion oikeudet.</translation>
         <translation>arabialainen Windows</translation>
     </message>
     <message>
+        <location filename="../languages.cpp" line="362"/>
+        <source>Asturian</source>
+        <translation>Asturia</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="368"/>
+        <source>Chinese (simplified)</source>
+        <translation>Kiina (yksinkertaistettu)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="404"/>
+        <source>Slovenian</source>
+        <translation>Slovenia</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="405"/>
+        <source>Syriac</source>
+        <translation>Syyria</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="407"/>
+        <source>Montenegrin</source>
+        <translation>Montenegro</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="408"/>
+        <source>Chinese bilingual</source>
+        <translation>Kiina kaksikielinen</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="423"/>
+        <source>Portuguese (BR)</source>
+        <translation>Portugali (BR)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="424"/>
+        <source>Chinese (traditional)</source>
+        <translation>Kiina (perinteinen)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="440"/>
+        <source>Manipuri</source>
+        <translation>Manipuri</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="443"/>
+        <source>Odia</source>
+        <translation>Odia</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="444"/>
+        <source>Sinhalese</source>
+        <translation>Sinhali</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="445"/>
+        <source>Northern Sami</source>
+        <translation>Saame</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="449"/>
+        <source>Portuguese (MZ)</source>
+        <translation>Portugali (MZ)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="450"/>
+        <source>Spanish (LA)</source>
+        <translation>Espanja (LA)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="451"/>
+        <source>Extremaduran</source>
+        <translation>Baski</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="452"/>
+        <source>Dari</source>
+        <translation>Dari</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="453"/>
+        <source>Spanish (EU)</source>
+        <translation>Espanja (EU)</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="454"/>
+        <source>Santali</source>
+        <translation>Haiti</translation>
+    </message>
+    <message>
+        <location filename="../languages.cpp" line="455"/>
+        <source>Toki Pona</source>
+        <translation>Maori</translation>
+    </message>
+    <message>
         <location filename="../languages.cpp" line="26"/>
         <source>Avestan</source>
         <translation>avestanin kieli</translation>
@@ -4403,6 +4538,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="30"/>
+        <location filename="../languages.cpp" line="426"/>
         <source>Aragonese</source>
         <translation>aragonian kieli</translation>
     </message>
@@ -4414,6 +4550,7 @@ Tarkista kansion oikeudet.</translation>
     <message>
         <location filename="../languages.cpp" line="37"/>
         <location filename="../languages.cpp" line="335"/>
+        <location filename="../languages.cpp" line="356"/>
         <source>Belarusian</source>
         <translation>valkovenäjä</translation>
     </message>
@@ -4424,6 +4561,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="45"/>
+        <location filename="../languages.cpp" line="428"/>
         <source>Bosnian</source>
         <translation>bosnian kieli</translation>
     </message>
@@ -4474,6 +4612,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="73"/>
+        <location filename="../languages.cpp" line="372"/>
         <source>Gaelic</source>
         <translation>gaelin  kieli</translation>
     </message>
@@ -4504,6 +4643,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="91"/>
+        <location filename="../languages.cpp" line="380"/>
         <source>Igbo</source>
         <translation>igbon kieli</translation>
     </message>
@@ -4539,6 +4679,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="106"/>
+        <location filename="../languages.cpp" line="389"/>
         <source>Khmer</source>
         <translation>khmerin kieli</translation>
     </message>
@@ -4559,6 +4700,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="116"/>
+        <location filename="../languages.cpp" line="438"/>
         <source>Luxembourgish</source>
         <translation>Luxembourgishin kieli</translation>
     </message>
@@ -4606,6 +4748,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="148"/>
+        <location filename="../languages.cpp" line="394"/>
         <source>Navajo</source>
         <translation>navahon kieli</translation>
     </message>
@@ -4641,6 +4784,7 @@ Tarkista kansion oikeudet.</translation>
     </message>
     <message>
         <location filename="../languages.cpp" line="158"/>
+        <location filename="../languages.cpp" line="400"/>
         <source>Pushto</source>
         <translation>pushton kieli</translation>
     </message>
@@ -4782,92 +4926,92 @@ Haluatko kirjoittaa sen päälle?</translation>
 <context>
     <name>MPVProcess</name>
     <message>
-        <location filename="../mpvoptions.cpp" line="203"/>
+        <location filename="../mpvoptions.cpp" line="205"/>
         <location filename="../mpvprocess.h" line="211"/>
         <source>the &apos;%1&apos; filter is not supported by mpv</source>
         <translation>mpv ei tue suodatinta &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="935"/>
+        <location filename="../mpvoptions.cpp" line="937"/>
         <location filename="../mpvprocess.h" line="212"/>
         <source>File:</source>
         <translation>Tiedosto:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="938"/>
+        <location filename="../mpvoptions.cpp" line="940"/>
         <location filename="../mpvprocess.h" line="213"/>
         <source>Video:</source>
         <translation>Video:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="939"/>
+        <location filename="../mpvoptions.cpp" line="941"/>
         <location filename="../mpvprocess.h" line="214"/>
         <source>Resolution:</source>
         <translation>Resoluutio:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="940"/>
+        <location filename="../mpvoptions.cpp" line="942"/>
         <location filename="../mpvprocess.h" line="215"/>
         <source>Frames per second:</source>
         <translation>Kuvaa sekunnissa:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="940"/>
+        <location filename="../mpvoptions.cpp" line="942"/>
         <location filename="../mpvprocess.h" line="216"/>
         <source>Estimated:</source>
         <translation>Arvio:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="942"/>
+        <location filename="../mpvoptions.cpp" line="944"/>
         <location filename="../mpvprocess.h" line="217"/>
         <source>Aspect Ratio:</source>
         <translation>Kuvasuhde:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="943"/>
-        <location filename="../mpvoptions.cpp" line="948"/>
+        <location filename="../mpvoptions.cpp" line="945"/>
+        <location filename="../mpvoptions.cpp" line="950"/>
         <location filename="../mpvprocess.h" line="218"/>
         <location filename="../mpvprocess.h" line="221"/>
         <source>Bitrate:</source>
         <translation>Bittinopeus:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="944"/>
+        <location filename="../mpvoptions.cpp" line="946"/>
         <location filename="../mpvprocess.h" line="219"/>
         <source>Dropped frames:</source>
         <translation>Pudonneet kuvat:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="947"/>
+        <location filename="../mpvoptions.cpp" line="949"/>
         <location filename="../mpvprocess.h" line="220"/>
         <source>Audio:</source>
         <translation>Ääni:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="949"/>
+        <location filename="../mpvoptions.cpp" line="951"/>
         <location filename="../mpvprocess.h" line="222"/>
         <source>Sample Rate:</source>
         <translation>Näytteenottotaajuus:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="950"/>
+        <location filename="../mpvoptions.cpp" line="952"/>
         <location filename="../mpvprocess.h" line="223"/>
         <source>Channels:</source>
         <translation>Kanavat:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="953"/>
+        <location filename="../mpvoptions.cpp" line="955"/>
         <location filename="../mpvprocess.h" line="224"/>
         <source>Audio/video synchronization:</source>
         <translation>Äänen/videon synkronointi:</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="956"/>
+        <location filename="../mpvoptions.cpp" line="958"/>
         <source>Cache (in seconds):</source>
         <translation>Välimuisti (sekunteina):</translation>
     </message>
     <message>
-        <location filename="../mpvoptions.cpp" line="957"/>
+        <location filename="../mpvoptions.cpp" line="959"/>
         <source>Cache speed:</source>
         <translation>Välimuistin nopeus:</translation>
     </message>
@@ -4954,7 +5098,7 @@ Haluatko kirjoittaa sen päälle?</translation>
     <message>
         <location filename="../multilineinputdialog.ui" line="13"/>
         <source>Enter URL(s)</source>
-        <translation>Syötä URL(s)</translation>
+        <translation>Anna url-osotteet</translation>
     </message>
     <message>
         <location filename="../multilineinputdialog.ui" line="19"/>
@@ -5264,7 +5408,7 @@ Haluatko kirjoittaa päälle?</translation>
     </message>
     <message>
         <location filename="../playlist.cpp" line="1420"/>
-        <source>It wasn&apos;t possible to load &apos;%1&apos;.
+        <source>It wasn't possible to load '%1'.
 Playlist file name must end with a specific suffix which is pls, xspf or m3u. &apos;%2&apos; is not supported. Please, choose once again!</source>
         <translation>Lataaminen &quot;%1&quot; epäonnistui.
 Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &quot;%2&quot; ei ole tuettu. Ole hyvä ja valitse uudelleen!</translation>
@@ -8363,10 +8507,6 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <translation>Verkko</translation>
     </message>
     <message>
-        <source>it will try to use mpv + youtube-dl only for the sites that require it</source>
-        <translation type="obsolete">se yrittää käyttää mpv + youtube-dl sovellusta vain sitä tarvitseville sivustoille</translation>
-    </message>
-    <message>
         <location filename="../prefnetwork.cpp" line="371"/>
         <source>User agent</source>
         <translation>Asiakas ohjelma</translation>
@@ -8388,7 +8528,7 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <location filename="../prefnetwork.cpp" line="97"/>
         <location filename="../prefnetwork.cpp" line="335"/>
         <source>Internal YouTube support</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisäinen YouTube tuki</translation>
     </message>
     <message>
         <location filename="../prefnetwork.cpp" line="110"/>
@@ -8420,7 +8560,7 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
     <message>
         <location filename="../prefnetwork.cpp" line="332"/>
         <source>it will try to use mpv with yt-dlp (or youtube-dl) only for the sites that require it</source>
-        <translation type="unfinished"></translation>
+        <translation>käyttää mpv:tä yt-dlp:n (tai youtube-dl) kanssa vain sitä tarvitseville sivustoille</translation>
     </message>
     <message>
         <location filename="../prefnetwork.cpp" line="335"/>
@@ -8428,8 +8568,9 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <translation>käytetään vain sisäistä YouTube-tukea</translation>
     </message>
     <message>
-        <source>uses mpv + youtube-dl for all sites</source>
-        <translation type="obsolete">käyttää mpv + youtube-dl kaikissa sivustoissa</translation>
+        <location filename="../prefnetwork.cpp" line="338"/>
+        <source>uses mpv with yt-dlp (or youtube-dl) for all sites</source>
+        <translation>käyttää mpv:tä yt-dlp:n (tai youtube-dl) kanssa kaikilla sivustoilla</translation>
     </message>
     <message>
         <location filename="../prefnetwork.cpp" line="344"/>
@@ -8437,8 +8578,9 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <translation>Haluttu laatu</translation>
     </message>
     <message>
-        <source>This option specifies the preferred quality for the video streams handled by youtube-dl.</source>
-        <translation type="obsolete">Tämä vaihtoehto määrittää ensisijaisen laadun youtube-dl videosta.</translation>
+        <location filename="../prefnetwork.cpp" line="345"/>
+        <source>This option specifies the preferred quality for the video streams handled by yt-dlp or youtube-dl.</source>
+        <translation>Tämä määrittää yt-dlp:n tai youtube-dl:n käsittelemien videostriimien ensisijaisen laadun.</translation>
     </message>
     <message>
         <location filename="../prefnetwork.cpp" line="347"/>
@@ -8626,16 +8768,6 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <location filename="../prefnetwork.cpp" line="427"/>
         <source>Port</source>
         <translation>Portti</translation>
-    </message>
-    <message>
-        <location filename="../prefnetwork.cpp" line="338"/>
-        <source>uses mpv with yt-dlp (or youtube-dl) for all sites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefnetwork.cpp" line="345"/>
-        <source>This option specifies the preferred quality for the video streams handled by yt-dlp or youtube-dl.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefnetwork.cpp" line="428"/>
@@ -8915,7 +9047,7 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
     <message>
         <location filename="../prefperformance.cpp" line="34"/>
         <source>Auto (safe)</source>
-        <translation type="unfinished"></translation>
+        <translation>Autom. (turvallinen)</translation>
     </message>
     <message>
         <location filename="../prefperformance.cpp" line="35"/>
@@ -10194,19 +10326,13 @@ Soittolistan nimen tulee päättyä pääteeseen, pls, xspf tai m3u. Pääte &qu
         <location filename="../helper.cpp" line="127"/>
         <location filename="../helper.cpp" line="133"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n sekuntia</numerusform>
-            <numerusform>%n sekuntia</numerusform>
-        </translation>
+        <translation><numerusform>%n sekuntia</numerusform><numerusform>%n sekuntia</numerusform></translation>
     </message>
     <message numerus="yes">
         <location filename="../helper.cpp" line="130"/>
         <location filename="../helper.cpp" line="132"/>
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n minuuttia</numerusform>
-            <numerusform>%n minuuttia</numerusform>
-        </translation>
+        <translation><numerusform>%n minuuttia</numerusform><numerusform>%n minuuttia</numerusform></translation>
     </message>
     <message>
         <location filename="../helper.cpp" line="134"/>

@@ -240,11 +240,11 @@ void FindSubtitlesWindow::retranslateStrings() {
 	while (i1.hasNext()) {
 		i1.next();
 		if (i1.key() == "es") {
-			language_filter->addItem( tr("Spanish") + " (es,sp,ea)", "es|sp|ea");
+			language_filter->addItem( tr("Spanish") + " (es,sp,ea)", "ea,es,sp");
 		}
 		else
 		if (i1.key() == "pt") {
-			language_filter->addItem( tr("Portuguese") + " (pt,pb,pm)", "pt|pb|pm");
+			language_filter->addItem( tr("Portuguese") + " (pt-pt,pt-br,pm)", "pm,pt-pb,pt-pt");
 		}
 		else {
 			language_filter->addItem( i1.value() + " (" + i1.key() + ")", i1.key() );
@@ -256,24 +256,12 @@ void FindSubtitlesWindow::retranslateStrings() {
 	language_filter->insertSeparator(language_filter->count());
 	#endif
 
-	QMap<QString,QString> l2 = Languages::list();
-	QMapIterator<QString, QString> i2(l2);
-	while (i2.hasNext()) {
-		i2.next();
-		if (language_filter->findData(i2.key()) == -1) {
-			if (i2.key() == "es") {
-				language_filter->addItem( tr("Spanish - Spain") + " (sp)", "sp");
-				language_filter->addItem( tr("Spanish - Latin America") + " (ea)", "ea");
-			}
-			else
-			if (i2.key() == "pt") {
-				language_filter->addItem( tr("Portuguese - Brasil") + " (pb)", "pb");
-			}
-			else {
-				language_filter->addItem( i2.value() + " (" + i2.key() + ")", i2.key() );
-			}
-		}
+	QMap<QString,QString> l2 = Languages::os_languages();
+	foreach (QString key, l2.keys()) {
+		QString lang = l2.value(key);
+		language_filter->addItem( lang + " (" + key + ")", key );
 	}
+
 	//language_filter->model()->sort(0);
 	language_filter->insertItem( 0, tr("All"), "" );
 	#if QT_VERSION >= 0x040400
@@ -325,12 +313,13 @@ void FindSubtitlesWindow::setMovie(QString filename) {
 	if (hash.isEmpty()) {
 		qWarning("FindSubtitlesWindow::setMovie: hash invalid. Doing nothing.");
 	} else {
+		QString lang = language_filter->itemData(language_filter->currentIndex()).toString();
 		QFileInfo fi(filename);
 		qint64 file_size = fi.size();
 		QString basename;
 		basename = fi.completeBaseName(); // Filename without extension
 		search_edit->setText(basename);
-		osclient->search(hash, file_size, basename);
+		osclient->search(hash, file_size, basename, lang);
 		last_file = filename;
 	}
 }
@@ -340,7 +329,8 @@ void FindSubtitlesWindow::searchTitle() {
 	qDebug() << "FindSubtitlesWindow::searchTitle:" << t;
 
 	if (osclient->searchMethod() != OSClient::Hash) {
-		osclient->search("", 0, t);
+		QString lang = language_filter->itemData(language_filter->currentIndex()).toString();
+		osclient->search("", 0, t, lang);
 	}
 }
 
@@ -373,9 +363,11 @@ void FindSubtitlesWindow::applyFilter(const QString & filter) {
 }
 
 void FindSubtitlesWindow::applyCurrentFilter() {
+	#if 0
 	//proxy_model->setFilterWildcard(language_filter->currentText());
 	QString filter = language_filter->itemData( language_filter->currentIndex() ).toString();
 	applyFilter(filter);
+	#endif
 }
 
 void FindSubtitlesWindow::setLanguage(const QString & lang) {
@@ -508,6 +500,13 @@ void FindSubtitlesWindow::itemActivated(const QModelIndex & index ) {
 		item->setData(download_link);
 	}
 	qDebug() << "FindSubtitlesWindow::itemActivated: download link:" << download_link;
+
+	if (download_link.isEmpty()) {
+		// Failed to get the download link
+		QMessageBox::warning(this, tr("Error"),
+                             tr("Failed to get the URL of the subtitle file.\nCheck your login credentials."));
+		return;
+	}
 
 #ifdef DOWNLOAD_SUBS
 	file_downloader->download( QUrl(download_link) );
