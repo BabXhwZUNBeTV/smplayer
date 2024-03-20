@@ -1841,8 +1841,8 @@ void Core::startMplayer( QString file, double seek ) {
 	proc->setOption("dr", pref->use_direct_rendering);
 	proc->setOption("double", pref->use_double_buffer);
 
-#if defined(Q_WS_X11) && defined(SCREENSAVER_OFF)
-	proc->setOption("stop-xscreensaver", pref->disable_screensaver);
+#if defined(Q_OS_LINUX) && defined(SCREENSAVER_OFF)
+	proc->setOption("stop-xscreensaver", false /*pref->disable_screensaver*/);
 #endif
 
 	if (display_screen != 0) {
@@ -2004,6 +2004,9 @@ void Core::startMplayer( QString file, double seek ) {
 		if (mset.current_subtitle_track != MediaSettings::NoneSelected) {
 			int real_id = mset.subs.IDAt(mset.current_subtitle_track);
 			proc->setOption("sid", QString::number(real_id));
+		}
+		else {
+			proc->setOption("sid", "auto");
 		}
 
 		if (mset.current_secondary_subtitle_track != MediaSettings::NoneSelected) {

@@ -597,9 +597,15 @@ void MPVProcess::setOption(const QString & option_name, const QVariant & value) 
 		if (!value.isNull()) arg << "--af-add=" + value.toString();
 	}
 	else
-	if (option_name == "aid" || option_name == "sid" || option_name == "secondary-sid" || option_name == "vid") {
+	if (option_name == "aid" || option_name == "vid") {
 		int v = value.toInt();
 		arg << QString("--%1=%2").arg(option_name).arg(v > -1 ? value.toString() : "no");
+	}
+	else
+	if (option_name == "sid" || option_name == "secondary-sid") {
+		QString s = value.toString();
+		if (s == "-1") s = "no";
+		arg << QString("--%1=%2").arg(option_name).arg(s);
 	}
 	else
 	if (option_name == "alang" || option_name == "slang" ||
@@ -853,8 +859,10 @@ void MPVProcess::setPause(bool b) {
 
 	// Workaround for mpv 0.37, playback not resuming after pause
 	// It seems mpv reports the pause state in the status line with some delay
-	#ifndef NO_PLAYPAUSE_WORKAROUND
-	if (b) sendCommand("no-osd seek 0 relative exact");
+	#if 1
+	if (b) {
+		for (int n=0; n < 50; n++) sendCommand("print_text IGNORE_THIS");
+	}
 	#endif
 }
 
