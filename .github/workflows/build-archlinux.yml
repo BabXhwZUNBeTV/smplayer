@@ -14,9 +14,7 @@ jobs:
 
     steps:
       - name: Fix permissions
-        run: |
-            sudo chown user:user ../*
-            sudo chown -R user:user /__w
+        run: sudo chown user:user ../*
       
       - name: Update
         run: sudo pacman -Syu --noconfirm
@@ -31,6 +29,7 @@ jobs:
         run: |
             cd archlinux
             ./build_smplayer.sh
+            sudo chown -R user:user /__w
                   
       - name: Create artifact
         if: github.event_name != 'release'
