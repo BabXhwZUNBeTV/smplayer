@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: wachii/archlinux:devel
-      options: --user user
+      #options: --user user
+      options: --user root
 
     steps:
       - name: Fix permissions
+        if: ${{false}}
         run: |
             sudo chown user:user ../*
       
