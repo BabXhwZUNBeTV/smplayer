@@ -10,14 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: wachii/archlinux:devel
-      #options: --user user
-      options: --user root
+      options: --user user
 
     steps:
       - name: Fix permissions
-        if: ${{false}}
         run: |
             sudo chown user:user ../*
+            sudo chown user:user /__w
       
       - name: Update
         run: sudo pacman -Syu --noconfirm
