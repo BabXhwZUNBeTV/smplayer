@@ -16,7 +16,7 @@ jobs:
       - name: Fix permissions
         run: |
             sudo chown user:user ../*
-            sudo chown user:user /__w
+            sudo chown -R user:user /__w
       
       - name: Update
         run: sudo pacman -Syu --noconfirm
