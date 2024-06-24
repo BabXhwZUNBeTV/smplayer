@@ -16,8 +16,6 @@ jobs:
       - name: Fix permissions
         run: |
             sudo chown user:user ../*
-            sudo chown -R user:user /__w
-            sudo chmod -R 777 /__w
       
       - name: Update
         run: sudo pacman -Syu --noconfirm
@@ -35,7 +33,7 @@ jobs:
                   
       - name: Create artifact
         if: github.event_name != 'release'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: smplayer-archlinux
           path: archlinux/*.pkg.tar.zst
